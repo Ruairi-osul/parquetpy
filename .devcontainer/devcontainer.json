@@ -5,10 +5,10 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
 	"features": {
-		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers/features/python:1": {"version": "3.11"},
 		"ghcr.io/devcontainers-contrib/features/black:2": {},
 		"ghcr.io/devcontainers-contrib/features/flake8:2": {},
-		"ghcr.io/flexwie/devcontainer-features/op:1": {},
+		"ghcr.io/flexwie/devcontainer-features/op:1": {}
 	},
 	"postStartCommand": "pip install . && pip install -r requirements.txt",
 	"customizations": {
